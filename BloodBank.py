@@ -9,9 +9,9 @@ else:
 cursor=db.cursor()
 root = Tk()
 root.title("BLOOD BANK")
-root.geometry("1920x1080")
+root.geometry("1080x650")
 root.configure(background='white')
-l3=Label(root,text="BLOOD BANK SYSTEM",bg='white',font = "Helvetica 15 bold").place(x=450,y=40,w=300,h=40)
+l3=Label(root,text="BLOOD BANK SYSTEM",bg='white',font = "Helvetica 15 bold").place(x=450,y=40,w=300,h=40,)
 l1=Label(root,text="Click to enter the details of the donor",bg='white',font="Helvetica 12").place(x=80,y=100,w=300,h=40)
 b1=Button(root,text="Donor Details",command=lambda : donordetails()).place(x=80,y=150)
 l2=Label(root,text="Click to enter the details of the blood",bg='white',font="Helvetica 12").place(x=80,y=200,w=300,h=40)
@@ -53,7 +53,7 @@ def retrieve(bg):
 def donordetails():
  root=Toplevel()
  root.title("BLOOD BANK")
- root.geometry("1024x768")
+ root.geometry("1024x600")
  root.configure(background ='#FF8F8F')
  l1=Label(root,text="Name:",bg='white',font="Helvetica 12").place(x=40,y=40)
  l2=Label(root,text="Age:",bg='white',font="Helvetica 12").place(x=40,y=80)
@@ -88,7 +88,7 @@ def donordetails():
 def blooddetails():
  root=Tk()
  root.title("BLOOD BANK")
- root.geometry("1024x768")
+ root.geometry("1024x600")
  root.configure(background ='#FF8F8F')
  l1=Label(root,text="Blood Group:",font="Helvetica 12").place(x=40,y=40,w=250,h=20)
  l2=Label(root,text="PLatetelet count (in 100 thousands):",font="Helvetica12").place(x=40,y=80,w=250,h=20)
@@ -139,7 +139,7 @@ def grid1(bg):
 def requestblood():
  root=Tk()
  root.title("BLOOD BANK")
- root.geometry("1024x720")
+ root.geometry("1024x600")
  root.configure(background='#FF8F8F')
  l=Label(root,text="Enter the blood group").place(x=50,y=50,w=400,h=40)
  e=Entry(root)
